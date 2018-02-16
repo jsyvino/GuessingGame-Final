@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game by JS</title>
+
+    <!-- Bootstrap and CSS here-->
+<!--<link rel='stylesheet' type='text/css' href= 'reset.css'>-->
+<link rel='stylesheet' type='text/css' href= 'style.css'>
+<link rel='stylesheet' type='text/css' href= 'bootstrap.css'>
+  </head>
+  <body>
+
+      <div id='app' class='center container'>
+
+        <div id='headers'>
+          <h1 id='title'>Play the Mystery Number Game!</h1> 
+          <h2 id= 'subtitle'>Guess a number between 1 and 100...good luck!</h2> 
+        </div>
+
+        <div id='main'>
+          <div id='input-parent'>
+            <input id='player-input' type="number" placeholder="Give it a go" maxlength = '3' autofocus=autofocus</input>
+            <button id='submit'>...and Go! </button>
+            <img id= 'losing' src= 'wompwomp.gif'></img>
+          </div>
+
+          <div id='guesses'>
+            <!-- unordered list of guesses -->
+            <p>
+              <ul id= 'guess-list'>
+                <li class = 'guess'>-</li>
+                <li class = 'guess'>-</li>
+                <li class = 'guess'>-</li>
+                <li class = 'guess'>-</li>
+                <li class = 'guess'>-</li>
+              </ul>
+            </p>
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button id= "reset">Start Over</button>
+            <button id = 'hint'>Need a Hint?</button>
+            <h4 id= 'hint-reminder'>'C'mon, you know you want one!</h4>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class= 'center'>
+        <div class = 'row'>
+          <div class= 'col-sm-4'>
+            <img src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class= 'col-sm-4'>
+            <h6>A Jaime Syvino Jam <br> <img src='Avery.png'></img> </h6>      
+            <!-- <img src='Avery.png'></img>*/ -->
+          </div>
+
+          <div class= 'col-sm-4'>
+            <img   src='grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+    <script src= "jquery.js"></script>
+    <script src= "GuessingGame.js"></script>
+  </body>
+</html>

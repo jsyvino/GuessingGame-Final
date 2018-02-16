@@ -1,0 +1,165 @@
+<style>
+.center {
+  text-align: center;
+}
+ul {
+    list-style: none;
+}
+.guess {
+    margin: 0 auto 0 auto;
+    display: inline;
+    text-align: center;
+    border-radius: 8px;
+    border: ridge;
+    font-size: 60px;
+    padding: 0 25px;
+    margin: 10px 10px 800px;
+}
+img {
+    display: inline;
+    width: 200px;
+    height: 100px;
+ }
+button{
+    font-variant: small-caps;
+    font-size: x-large;
+    border-radius: 6px;
+    border: solid 2px;
+    border-color: rgb(6, 28, 100);
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 14px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button:hover:enabled{
+    border: solid 3px;  
+    background-color: white;
+    color: rgb(6, 28, 100);
+}
+button:active{
+    border: solid 2px;  
+    background-color: white;
+    color: rgb(6, 28, 100);
+    transform: translateY(4px);
+}
+button:disabled{
+    background-color: rgb(133, 133, 133);
+    color: black;
+}
+#reset{
+    background-color: white;
+    color: rgb(83, 3, 3);
+    border-color: rgb(83,3,3);
+}
+#reset:hover{
+    border-color: rgb(83, 3, 3);
+    background-color: rgb(250, 3, 3);
+    color: white;
+}
+#hint{
+    background-color: white;
+    color: rgb(0, 48, 6);
+    border-color: rgb(0, 48, 6);
+}
+#hint:disabled{
+    background-color: rgb(133, 133, 133);
+    color: black;
+}
+#hint:hover:enabled{
+    border-color: rgb(0, 48, 6);
+    background-color: rgb(0, 182, 24);
+    color: white;
+}
+#hint-reminder{
+    display: none;
+    padding-top: 10px;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url('chalkboard.jpg'); 
+    background-size: cover;
+}
+.winning{
+    background-image: url('fireworks.gif'); 
+}
+#losing{
+    display: none;
+    width: 528px;
+    height: 292px;
+    position: absolute;
+    top: -10px;
+    left: -185px;
+}
+#menu-btns{
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+}
+#input-parent{
+    position: relative;
+    width: 160px;
+    margin: 0 auto 0 auto;
+    padding-bottom: 40px;
+}
+input::placeholder {
+    font-variant: small-caps;
+    font-size: 20px;
+    transform: translateY(-70%);
+}
+input:focus{
+    border-radius: 80%;  
+}
+#player-input{
+    font-variant: small-caps;
+    height: 120px;
+    width: 160px;
+    border: solid  2px rgb(2, 2, 68);
+    border-radius: 80%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 70px;
+}
+#submit{
+    position: absolute;
+    top: 83px;
+    left: 100px;
+    border-radius: 70%;
+    height: 60px;
+    line-height: 20px;
+}
+#subtitle{
+    font-size: 55px;
+    font-weight: 500;
+    font-family: 'amaticbold', Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 0px 30px;
+}
+#title{
+    font-size: 90px;
+    font-family: 'amaticbold', Georgia, 'Times New Roman', Times, serif;
+    padding-top: 20px;
+}
+#app{
+    text-align: center;
+    margin: 5px auto 0px;
+    background-color: rgba(255, 255, 255, 0.88);
+    border: solid 2px;
+    border-color: cornflowerblue;
+    padding-bottom: 8%;
+}
+#footer {
+    width: 100%;
+    border-top: solid 2px black;
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+@font-face {
+    font-family: 'amaticbold';
+    src: url('amatic-bold-webfont.woff2') format('woff2'),
+         url('amatic-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+</style>
