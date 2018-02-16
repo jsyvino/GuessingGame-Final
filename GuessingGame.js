@@ -126,6 +126,7 @@ $(document).ready(function(){
         if(game.hintCount===0){
         var hint= game.provideHint();
         $('#title').text("The winning number is: "+game.hint);
+        $('#hint-reminder').text("Your Hint: "+ game.hint.join(', '));
         }
         else $('#title, #hint-reminder').text("You only get one hint! Your's was "+ game.hint.join(', '));
         $('#subtitle').text('Now, guess again!');
@@ -142,6 +143,7 @@ $(document).ready(function(){
         $('#losing').hide();
         $('.guess').text('-');
         $('#hint, #submit').prop("disabled", false);
+        $('#hint-reminder').text("C'mon, you know you want one!");
     });
 
 //end of code
