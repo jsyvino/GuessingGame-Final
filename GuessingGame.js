@@ -92,7 +92,6 @@ function submitGuess(game){
         if(message===loseMess){
             $('#losing').show();
         }
-        console.log(input, game.winningNumber, game.pastGuesses);
 }
 
 function updateUL(game){
