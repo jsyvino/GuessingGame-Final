@@ -51,7 +51,7 @@ Game.prototype.checkGuess= function(){
           return repMess;
     } else this.pastGuesses.push(this.playersGuess);
     
-    if(this.pastGuesses.length>=5) return loseMess+" The winning number was "+this.winningNumber;
+    if(this.pastGuesses.length>=5) return loseMess;
     else if(this.difference()<10) return 'You\'re burning up!';
     else if(this.difference()<25) return 'You\'re lukewarm';
     else if(this.difference()<50) return 'You\'re a bit chilly';
@@ -80,7 +80,7 @@ function submitGuess(game){
         updateUL(game);
         if(message===repMess) submessage= "Guess Again!";
         else if(message=== winMess||message===loseMess){ 
-            submessage= 'Wanna Play Again? Click "Start Over"';
+            submessage= "The winning number was "+game.winningNumber+'. Wanna Play Again? Click "Start Over"';
             $('#hint, #submit').prop("disabled", true);
         }
         else if(game.isLower()) submessage= "Guess Higher";
