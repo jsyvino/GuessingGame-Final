@@ -51,7 +51,7 @@ Game.prototype.checkGuess= function(){
           return repMess;
     } else this.pastGuesses.push(this.playersGuess);
     
-    if(this.pastGuesses.length>=5) return loseMess;
+    if(this.pastGuesses.length>=5) return loseMess+" The winning number was "+this.winningNumber;
     else if(this.difference()<10) return 'You\'re burning up!';
     else if(this.difference()<25) return 'You\'re lukewarm';
     else if(this.difference()<50) return 'You\'re a bit chilly';
